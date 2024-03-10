@@ -1,0 +1,194 @@
+@font-face {
+  font-family: "av-regular";
+  src: url(./fonts/AvertaCY-Regular.ttf);
+}
+@font-face {
+  font-family: "av-sb";
+  src: url(./fonts/AvertaCY-Semibold.ttf);
+}
+@font-face {
+  font-family: "av-bold";
+  src: url(./fonts/AvertaCY-Bold.ttf);
+}
+@font-face {
+  font-family: "av-light";
+  src: url(./fonts/AvertaCY-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  color: #333;
+}
+
+.intro-section,
+.question-section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello {
+  font-family: av-bold;
+  font-size: 7.5rem;
+  letter-spacing: -8.5px;
+}
+.writing {
+  font-family: av-sb;
+  padding-left: 5px;
+  font-size: 1.5rem;
+}
+
+.question-section {
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+
+.question,
+.who-is {
+  font-family: av-bold;
+  font-size: 9rem;
+  letter-spacing: 3.5px;
+}
+
+.answer,
+.who-answer {
+  font-family: av-sb;
+  padding-left: 5px;
+  font-size: 2rem;
+  padding-left: 10px;
+}
+
+.picture-div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-section {
+  width: 30%;
+  width: 390px;
+  height: 590px;
+}
+.lines-section {
+  width: 60%;
+}
+.op-lines {
+  width: max-content;
+}
+.image {
+  height: 100%;
+  width: 100%;
+  /* border-radius: 12px; */
+  object-fit: cover;
+  transition: all ease-in-out 1s;
+  cursor: pointer;
+}
+.image-3,
+.image-4 {
+  object-position: center bottom;
+}
+.image:hover {
+  scale: 1.075;
+}
+.lines {
+  font-family: av-bold;
+  font-size: 6.5rem;
+  width: 100%;
+}
+
+.video-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-segment {
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  opacity: 0;
+  display: none;
+  transition: all 2s ease-in-out;
+}
+.video-playback {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.video-notation {
+  width: 65%;
+}
+.video-edited {
+  height: 600px;
+}
+
+.hover-btn {
+  position: absolute;
+  padding: 16px 46px;
+  border-radius: 40px;
+  border: none;
+  background-color: rgb(236, 236, 236);
+  font-family: av-regular;
+  font-size: 1rem;
+  color: rgb(95, 94, 94);
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.who {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.who {
+  padding-left: 5%;
+}
+.who-answer {
+  padding-right: 30%;
+}
+
+.about-journey {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about {
+  font-family: av-bold;
+  font-size: 5.5rem;
+  padding: 0 5%;
+}
+
+.made {
+  width: 100%;
+  font-family: av-sb;
+  font-size: 2rem;
+  padding-top: 20px;
+  text-align: right;
+  padding-right: 5%;
+}
